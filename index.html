@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanguard TD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div>
+          <h1>Vanguard TD</h1>
+          <p>Dalga başlat, kuleleri yerleştir, rotayı savun.</p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <span class="label">Altın</span>
+            <span id="gold">0</span>
+          </div>
+          <div class="stat">
+            <span class="label">Can</span>
+            <span id="lives">0</span>
+          </div>
+          <div class="stat">
+            <span class="label">Dalga</span>
+            <span id="wave">0</span>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="panel">
+          <button id="buildTower" class="primary">Kule Yerleştir (50)</button>
+          <button id="startWave" class="accent">Dalga Başlat</button>
+          <div class="info">
+            <h2>Strateji</h2>
+            <ul>
+              <li>Rotayı dar tutmak için kuleleri kenarlara diz.</li>
+              <li>Altın biriktirip menzili geniş kuleler yerleştir.</li>
+              <li>Dalga güçlendikçe kule sayısını artır.</li>
+            </ul>
+          </div>
+          <div class="legend">
+            <h3>Kontroller</h3>
+            <p>"Kule Yerleştir" ile ızgarada boş bir kareye tıkla.</p>
+            <p>Sağ altta düşmanlar görünmeden dalga başlat.</p>
+          </div>
+        </section>
+        <section class="canvas-wrap">
+          <canvas id="gameCanvas" width="840" height="600"></canvas>
+          <div class="status" id="status"></div>
+        </section>
+      </main>
+      <footer>
+        <p>Vanguard TD - Basit ama taktik odaklı bir kule savunma demosu.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
